@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #F26E50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-outside {
+  display: none;
+}
+
+.container-inside {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  margin: 0 auto;
+  flex-flow: wrap row;
+  background-color: #fff;
+}
+
+.marked:hover {
+  cursor: pointer;
+  background-color: #F2913D;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px auto;
+  background-color: #F2C029;
+}
+
+h1 {
+  color: #fff;
+  align-self: center;
+  margin: 0 auto 0 12px;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 1px 6px 2px #000000;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 8px 0 4px;
+}
+
+.menu p {
+  color: #fff;
+  margin-right: 24px;
+  align-self: center;
+  text-align: center;
+  font-size: 14px;
+  text-shadow: 1px 4px 2px #000000;
+}
+
+.btn {
+  border: 0;
+  align-self: center;
+  display: block;
+  outline: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  padding:  10px 12px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #D93BBE;
+  border-bottom: 6px solid #BF268A;
+  margin-right: 12px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 6px solid rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 32px 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 14px 2px #000000;
+}
+
+.modal .modal-result {
+  font-size: 14px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal-message {
+  margin: 12px 0;
+}
+
+.btn-modal {
+  display: block;
+  margin: 0 auto;
+}
