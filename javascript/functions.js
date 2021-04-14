@@ -46,6 +46,8 @@ function validGame() {
 
     return;
   }
+  if(currentTime < 11)
+    timerNearEnd()
 
   $("#time").html(currentTime - 1);
 }
@@ -81,4 +83,8 @@ function validateHandleClick() {
     console.log('totalItems -> ', totalCircles);
     console.log('count -> ', count);
   });
+}
+
+function timerNearEnd() {
+  $("#timer").css("animation", "timer 1s ease infinite");
 }
